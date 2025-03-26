@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Flask SPA{% endblock %}
+
+{% block content %}
+<div id="app">
+    <main>
+        {% include 'sections/hero.html' %}
+        
+        {% include 'sections/services.html' %}
+        
+        {% include 'sections/about.html' %}
+        
+        {% include 'sections/testimonials.html' %}
+        
+        {% include 'sections/faq.html' %}
+        
+        {% include 'sections/contact.html' %}
+    </main>
+</div>
+{% endblock %} 

@@ -1,0 +1,43 @@
+<section class="contact-section" id="contact">
+    <div class="contact-container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <h3>Call Us</h3>
+                    <p>+1 (555) 123-4567</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email Us</h3>
+                    <p>info@truesparkles.com</p>
+                </div>
+            </div>
+            <form class="contact-form" action="{{ url_for('main.send_message') }}" method="POST">
+                <div class="form-group">
+                    <input type="text" name="name" required placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" required placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <input type="tel" name="phone" required placeholder="Your Phone">
+                </div>
+                <div class="form-group">
+                    <select name="service" required>
+                        <option value="">Select Service</option>
+                        <option value="home">Home Cleaning</option>
+                        <option value="office">Office Cleaning</option>
+                        <option value="deep">Deep Cleaning</option>
+                        <option value="move">Move In/Out Cleaning</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" required placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section> 
