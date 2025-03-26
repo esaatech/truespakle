@@ -3,10 +3,15 @@ name = "flask-spa"
 version = "0.1.0"
 description = "Flask SPA Application"
 authors = ["Your Name <your.email@example.com>"]
+packages = [
+    { include = "app" }
+]
 
 [tool.poetry.dependencies]
-python = "^3.9"
-flask = "^2.3.3"
+python = "^3.8"
+Flask = "^2.0.1"
+python-dotenv = "^1.0.0"
+Flask-Mail = "^0.9.1"
 gunicorn = "^21.2.0"
 
 [tool.poetry.dev-dependencies]
