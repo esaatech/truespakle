@@ -8,15 +8,20 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/favicon.png') }}">
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-28XK7WKJZH"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-28XK7WKJZH"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
-        gtag('config', 'G-28XK7WKJZH');
+        gtag('config', 'G-28XK7WKJZH', {
+            'page_title': 'TrueSparkles',  // Default title
+            'page_path': window.location.pathname,
+            'page_location': window.location.href,
+            'send_page_view': true  // Initial page view
+        });
     </script>
-
 
 </head>
 <body>
