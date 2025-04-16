@@ -3,7 +3,11 @@ from flask_mail import Mail
 import os
 from dotenv import load_dotenv
 
+# Add print statement to debug
+print("Loading environment variables...")
 load_dotenv()
+print(f"Secret key loaded: {os.getenv('SECRET_KEY')}")
+
 mail = Mail()
 
 def create_app():
